@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Sederhana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="Style.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 h-full min-h-screen p-2 sm:p-4">
+  <div class="w-full h-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row profile-container">
+    <!-- Sidebar -->
+    <div class="w-full md:w-1/3 lg:w-1/4 bg-blue-600 text-white p-4 sm:p-6 flex flex-col">
+      <div class="text-center flex-grow">
+        <img src="Image/Profil.JPG" alt="Foto Profil"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full mx-auto border-4 border-white" />
+        <h1 class="mt-3 text-lg font-bold">Aristo Benedict Iskandar</h1>
+        <p class="text-blue-100 text-sm">Mahasiswa - AI Developer</p>
+        <p class="text-blue-100 text-sm mt-1">
+          <i class="fas fa-university mr-2"></i>Universitas Ciputra
+        </p>
+      </div>
+
+      <div class="mt-6">
+        <h2 class="font-semibold text-lg mb-3 border-b border-blue-400 pb-2">
+          <i class="fas fa-address-card mr-2"></i>Kontak
+        </h2>
+        <p class="text-sm"><i class="fas fa-envelope mr-2"></i> abenedict02@student.ciputra.ac.id</p>
+        <p class="text-sm"><i class="fas fa-phone mr-2"></i> +62 811-4856-877</p>
+        <p class="text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Makassar, Indonesia</p>
+      </div>
+
+      <div class="mt-6">
+        <h2 class="font-semibold text-lg mb-3 border-b border-blue-400 pb-2">
+          <i class="fas fa-share-alt mr-2"></i>Sosial Media
+        </h2>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.linkedin.com/in/aristo-iskandar-b72633340/" target="_blank"><i class="fab fa-linkedin text-white text-xl hover:text-blue-200"></i></a>
+          <a href="https://yuukiyuna-tostw.github.io/" target="_blank"><i class="fab fa-github text-white text-xl hover:text-blue-200"></i></a>
+          <a href="https://x.com/Yunachansenpai" target="_blank"><i class="fab fa-twitter text-white text-xl hover:text-blue-200"></i></a>
+          <a href="https://www.instagram.com/aristoiskandar/" target="_blank"><i class="fab fa-instagram text-white text-xl hover:text-blue-200"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="w-full md:w-2/3 lg:w-3/4 p-4 sm:p-6 overflow-y-auto">
+      <!-- Navigasi Tab -->
+      <div class="mb-4 flex space-x-3 border-b border-gray-300 pb-2">
+        <button class="tab-button flex-1 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 border-0 rounded shadow py-2 transition-colors duration-200" data-target="tentang">Informasi Umum</button>
+        <button class="tab-button flex-1 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 border-0 rounded shadow py-2 transition-colors duration-200" data-target="skill">Skill</button>
+        <button class="tab-button flex-1 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 border-0 rounded shadow py-2 transition-colors duration-200" data-target="tools">Tools</button>
+        <button class="tab-button flex-1 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 border-0 rounded shadow py-2 transition-colors duration-200" data-target="pendidikan">Pendidikan</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div id="tentang" class="tab-content">
+        <h2 class="font-semibold text-lg mb-4 border-b border-gray-200 pb-2 text-blue-600">
+          <i class="fas fa-user mr-2"></i>Informasi Umum
+        </h2>
+        <h3 class="font-medium text-blue-600 text-lg mt-4 mb-2">Informasi Singkat</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Mahasiswa IMT Universitas Ciputra dengan fokus pada pengembangan Artificial Intelligence. 
+          Memiliki minat dalam pengembangan aplikasi berbasis AI dan machine learning. 
+          Aktif dalam berbagai proyek penelitian dan pengembangan teknologi terkini. 
+          Saya merupakan mahasiswa angkatan tahun 2024 yang belajar mengenai berbagai konsep dan 
+          implementasi program dalam pembuatan tugas berbasis project dalam melatih dan mengasah pengetahuan di 
+          bidang pemrograman maupun pembuatan suatu tampilan.
+        </p>
+        <h3 class="font-medium text-blue-600 text-lg mt-4 mb-2">Skill</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Java</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Bootstrap CSS</span>
+        </div>
+        <h3 class="font-medium text-blue-600 text-lg mt-4 mb-2">Tools</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Figma</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">GitHub</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">VS Code</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Draw.io</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Flowgorithm</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MySQL Workbench</span>
+        </div>
+        <h3 class="font-medium text-blue-600 text-lg mt-4 mb-2">Pendidikan</h3>
+        <h3 class="font-medium text-gray-800 text-base">Universitas Ciputra</h3>
+        <p class="text-gray-600 text-sm">Informatika dan Artificial Intelligence</p>
+        <p class="text-gray-500 text-sm">2024 - Sekarang</p>
+      </div>
+
+      <div id="skill" class="tab-content hidden">
+        <h2 class="font-semibold text-lg mb-3 border-b border-gray-200 pb-2 text-blue-600">
+          <i class="fas fa-code mr-2"></i>Skill
+        </h2>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/HTML Logo.jpg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">HTML</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat dan menyusun 
+                struktur halaman web. HTML bekerja dengan menggunakan tag-tag untuk menentukan elemen-elemen yang tampil 
+                di browser. HTML tidak memiliki kemampuan logika seperti bahasa pemrograman, tetapi berfungsi sebagai 
+                fondasi utama dalam membangun konten dan tata letak halaman web, yang kemudian dapat dikombinasikan dengan 
+                CSS untuk tampilan dan JavaScript untuk interaktivitas.`
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/CSS Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">CSS</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan gaya dari 
+                elemen-elemen HTML di halaman web. Dengan CSS, kita dapat mengatur warna, ukuran, jenis huruf, jarak, 
+                posisi, tata letak, dan berbagai aspek visual lainnya dari suatu elemen. CSS memungkinkan pemisahan 
+                antara struktur (HTML) dan presentasi, sehingga desain web menjadi lebih fleksibel dan mudah dikelola. 
+                CSS dapat ditulis langsung di dalam tag HTML (inline) yang kemudian ke file utama berisikan HTML.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Java Script Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Java Script</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan dinamika 
+                pada halaman web. Dengan JavaScript, elemen HTML dapat dimanipulasi secara langsung, seperti menangani 
+                klik tombol, mengubah konten secara real-time, membuat animasi, memvalidasi formulir, dan berkomunikasi 
+                dengan server tanpa memuat ulang halaman (AJAX). JavaScript dijalankan di sisi klien (browser) dan bekerja 
+                bersama HTML dan CSS untuk menciptakan pengalaman pengguna yang responsif dan interaktif. Selain di browser, 
+                JavaScript juga dapat digunakan di server melalui platform seperti Node.js.
+              </p>
+            </div>
+          </div>   
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Python Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Python</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Python adalah bahasa pemrograman tingkat tinggi yang dirancang dengan sintaks yang sederhana dan 
+                mudah dibaca, sehingga cocok untuk pemula maupun profesional. Python bersifat serbaguna dan dapat 
+                digunakan untuk berbagai bidang seperti pengembangan web, analisis data, kecerdasan buatan, otomatisasi, 
+                hingga pengembangan perangkat lunak. Bahasa ini mendukung berbagai paradigma pemrograman, termasuk 
+                pemrograman berorientasi objek dan fungsional. Selain itu, Python memiliki komunitas yang besar dan 
+                pustaka (library) yang sangat kaya, seperti NumPy untuk sains data, Django untuk web, dan TensorFlow 
+                untuk machine learning.
+              </p>
+            </div>
+          </div>   
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Java Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Java</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Java adalah bahasa pemrograman berorientasi objek yang dirancang untuk dapat dijalankan di berbagai 
+                platform melalui prinsip “tulis sekali, jalankan di mana saja” (write once, run anywhere). Program 
+                Java dikompilasi menjadi bytecode yang dijalankan oleh Java Virtual Machine (JVM), sehingga dapat 
+                berjalan di berbagai sistem operasi tanpa perlu diubah. Java banyak digunakan dalam pengembangan 
+                aplikasi desktop, web, mobile (terutama Android), dan sistem enterprise. Bahasa ini dikenal stabil, 
+                aman, dan memiliki struktur yang kuat, serta didukung oleh banyak pustaka dan framework seperti Spring 
+                dan JavaFX.
+              </p>
+            </div>
+          </div>   
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Tailwind CSS Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Tailwind CSS</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Tailwind CSS adalah framework CSS utility-first yang memungkinkan pengembang membangun antarmuka 
+                pengguna secara cepat dan efisien dengan menggunakan kelas-kelas siap pakai langsung di elemen HTML. 
+                Alih-alih menulis CSS kustom untuk setiap komponen, Tailwind menyediakan utilitas seperti `p-4` 
+                untuk padding, `text-center` untuk rata tengah teks, atau `bg-blue-500` untuk latar belakang biru, 
+                sehingga styling dapat dilakukan langsung di dalam markup. Pendekatan ini membantu mengurangi 
+                penulisan CSS yang berulang, menjaga konsistensi desain, dan mempercepat proses pengembangan antarmuka. 
+                Tailwind juga mendukung kustomisasi penuh melalui file konfigurasi dan integrasi dengan berbagai tools 
+                modern.
+              </p>
+            </div>
+          </div>   
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Bootstrap Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Bootstrap</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Bootstrap CSS adalah framework front-end yang dirancang untuk mempercepat dan mempermudah pengembangan 
+                antarmuka web yang responsif dan konsisten. Dikembangkan oleh tim dari Twitter, Bootstrap menyediakan 
+                kumpulan kelas dan komponen siap pakai seperti tombol, formulir, navigasi, dan grid system berbasis 
+                12 kolom yang memudahkan pengaturan tata letak. Dengan Bootstrap, pengembang dapat dengan cepat membuat 
+                desain yang menarik tanpa menulis banyak kode CSS dari awal. Framework ini juga responsif secara default, 
+                artinya tampilan akan otomatis menyesuaikan dengan ukuran layar perangkat, seperti desktop, tablet, atau 
+                ponsel.
+              </p>
+            </div>
+          </div>   
+        </div>
+
+      </div>
+
+      <div  id="tools" class="tab-content hidden">
+        <h2 class="font-semibold text-lg mb-3 border-b border-gray-200 pb-2 text-blue-600">
+          <i class="fas fa-tools mr-2"></i>Tools
+        </h2>
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Figma Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Figma</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Figma adalah alat desain antarmuka berbasis web yang digunakan untuk 
+                membuat prototipe, wireframe, dan desain UI/UX secara kolaboratif. 
+                Berbeda dengan software desain tradisional, Figma memungkinkan banyak 
+                pengguna bekerja secara real-time dalam satu proyek, mirip seperti 
+                Google Docs untuk desain. Figma mendukung berbagai fitur seperti 
+                desain vektor, sistem grid, komponen yang dapat digunakan ulang, serta 
+                integrasi prototipe interaktif tanpa perlu coding. Karena berbasis 
+                cloud, Figma dapat diakses langsung melalui browser tanpa perlu 
+                instalasi, dan tersedia juga versi desktop untuk kemudahan penggunaan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/GitHub Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">GitHub</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                GitHub adalah platform berbasis web yang digunakan untuk menyimpan, 
+                mengelola, dan melacak perubahan kode program secara kolaboratif 
+                menggunakan sistem kontrol versi Git. Dengan GitHub, pengembang dapat 
+                bekerja bersama dalam satu proyek, melakukan versi kontrol, membuat 
+                cabang (branch), mengajukan perubahan melalui pull request, dan 
+                melakukan review kode secara efisien. GitHub juga menyediakan fitur 
+                dokumentasi, pelacakan isu (issues), serta integrasi dengan berbagai 
+                tools pengembangan. Selain sebagai tempat kolaborasi, GitHub juga 
+                berfungsi sebagai portofolio online bagi pengembang untuk memamerkan 
+                proyek-proyek mereka.
+              </p>
+            </div>
+          </div>
+        </div>
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/VS Code Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">VS Code</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Visual Studio Code (VS Code) adalah text editor sumber terbuka buatan 
+                Microsoft yang ringan namun sangat powerful, digunakan untuk menulis 
+                dan mengedit kode dalam berbagai bahasa pemrograman seperti JavaScript, 
+                Python, Java, C++, dan lainnya. VS Code mendukung fitur-fitur canggih 
+                seperti penyorotan sintaks (syntax highlighting), IntelliSense 
+                (auto-complete pintar), debugging langsung, Git integration, serta 
+                terminal bawaan. Selain itu, VS Code sangat fleksibel karena bisa 
+                diperluas dengan berbagai ekstensi yang tersedia di marketplace, 
+                memungkinkan pengguna menyesuaikan editor sesuai kebutuhan proyek. 
+                VS Code tersedia di berbagai sistem operasi seperti Windows, macOS, 
+                dan Linux.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Draw.Io Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Draw.io</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                draw.io adalah aplikasi berbasis web yang digunakan untuk membuat 
+                berbagai jenis diagram secara mudah dan gratis, seperti flowchart, 
+                diagram jaringan, diagram organisasi, mind map, dan diagram teknis 
+                lainnya. Dengan antarmuka drag-and-drop yang intuitif, pengguna dapat 
+                membuat, mengedit, dan menyimpan diagram langsung di browser tanpa 
+                perlu instalasi software tambahan. draw\.io juga mendukung integrasi 
+                dengan layanan penyimpanan cloud seperti Google Drive, OneDrive, dan 
+                Dropbox, sehingga memudahkan kolaborasi dan akses dari berbagai 
+                perangkat. Aplikasi ini populer di kalangan profesional dan pelajar 
+                untuk merancang visualisasi ide dan proses secara efisien.
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/Flowgorithm Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">Flowgorithm</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Flowgorithm adalah aplikasi gratis yang digunakan untuk membuat dan 
+                menjalankan diagram alir (flowchart) sebagai alat bantu belajar 
+                pemrograman. Dengan Flowgorithm, pengguna bisa merancang logika 
+                program secara visual menggunakan simbol-simbol standar flowchart 
+                seperti proses, keputusan, input/output, dan loop, tanpa perlu menulis 
+                kode secara langsung. Setelah flowchart dibuat, Flowgorithm dapat 
+                menerjemahkannya menjadi kode dalam beberapa bahasa pemrograman 
+                populer seperti Python, Java, dan C++. Alat ini sangat berguna untuk 
+                pemula agar memahami konsep dasar algoritma dan struktur program secara 
+                intuitif dan interaktif.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg p-4 shadow-md bg-white mb-2">
+          <div class="flex items-center space-x-4">
+            <img src="Image/MySQL WorkBench Logo.jpeg" alt="Skill Image" class="w-24 h-24 rounded-lg shadow-md">
+            <div>
+              <h3 class="font-medium text-blue-600 text-lg">MySQL Workbench</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                MySQL Workbench adalah aplikasi visual yang digunakan untuk merancang, 
+                mengelola, dan mengoptimalkan basis data MySQL secara grafis. Dengan 
+                MySQL Workbench, pengguna dapat membuat diagram Entity-Relationship (ER), 
+                menulis dan menjalankan query SQL, memonitor performa database, serta 
+                melakukan administrasi server MySQL dengan mudah melalui antarmuka yang 
+                intuitif. Aplikasi ini sangat membantu pengembang dan administrator 
+                database dalam mendesain skema, mengelola data, serta mendiagnosis masalah 
+                tanpa perlu menggunakan baris perintah secara langsung. MySQL Workbench 
+                tersedia untuk berbagai platform seperti Windows, macOS, dan Linux.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+    <div id="pendidikan" class="tab-content hidden">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <!-- Header Section -->
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-blue-800">
+            <i class="fas fa-university mr-3"></i>Informatika Universitas Ciputra Makassar
+          </h2>
+          <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+            Akreditasi: A
+          </div>
+        </div>
+
+        <!-- University Info Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <!-- University Overview -->
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+              <h3 class="font-semibold text-gray-800">Informasi Umum</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="grid grid-cols-12 gap-2 items-start">
+                <span class="col-span-3 font-medium">Didirikan</span>
+                <span class="col-span-1 text-center">:</span>
+                <span class="col-span-8">2022</span>
+              </li>
+              <li class="grid grid-cols-12 gap-2 items-start">
+                <span class="col-span-3 font-medium">Lokasi</span>
+                <span class="col-span-1 text-center">:</span>
+                <span class="col-span-8">Kampus Utama, Jl. Sunset Boulevard, CitraLand City Losari, Makassar 90224, Sulawesi Selatan, Indonesia</span>
+              </li>
+              <li class="grid grid-cols-12 gap-2 items-start">
+                <span class="col-span-3 font-medium">Dekan</span>
+                <span class="col-span-1 text-center">:</span>
+                <span class="col-span-8">David Sundoro, S.T., M.MT.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Programs Offered -->
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-graduation-cap text-blue-600 mr-2"></i>
+              <h3 class="font-semibold text-gray-800">Program Studi</h3>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                <span class="text-sm">S1 Teknik Informatika - Artificial Intelligence</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                <span class="text-sm">S1 Teknik Informatika - Full Stack Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-chart-bar text-blue-600 mr-2"></i>
+              <h3 class="font-semibold text-gray-800">Statistik</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div class="bg-blue-50 p-2 rounded text-center">
+                <div class="text-blue-800 font-bold">7</div>
+                <div class="text-gray-600 text-xs">Dosen</div>
+              </div>
+              <div class="bg-green-50 p-2 rounded text-center">
+                <div class="text-green-800 font-bold">1000</div>
+                <div class="text-gray-600 text-xs">Mahasiswa</div>
+              </div>
+              <div class="bg-purple-50 p-2 rounded text-center">
+                <div class="text-purple-800 font-bold">50</div>
+                <div class="text-gray-600 text-xs">Komputer Laboratorium</div>
+              </div>
+              <div class="bg-yellow-50 p-2 rounded text-center">
+                <div class="text-yellow-800 font-bold">100%</div>
+                <div class="text-gray-600 text-xs">Kelulusan Tepat Waktu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facilities Section -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+            <i class="fas fa-building text-blue-600 mr-2"></i>Fasilitas
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-shadow">
+              <i class="fas fa-flask text-blue-500 text-2xl mb-2"></i>
+              <div class="font-medium text-sm">Lab. Komputer</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-shadow">
+              <i class="fas fa-book text-green-500 text-2xl mb-2"></i>
+              <div class="font-medium text-sm">Perpustakaan</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-shadow">
+              <i class="fas fa-wifi text-purple-500 text-2xl mb-2"></i>
+              <div class="font-medium text-sm">WiFi Kampus</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-shadow">
+              <i class="fas fa-utensils text-yellow-500 text-2xl mb-2"></i>
+              <div class="font-medium text-sm">Kantin</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement Highlights -->
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <i class="fas fa-trophy text-blue-600 text-xl"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-sm font-medium text-blue-800">Prestasi Terkini</h3>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 3 Internet of Things Competition – PNBIT X ECO 2024</p>
+              </div>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 1 UI/UX Design – PARAS ICT VIII Competition</p>
+              </div>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 3 4C National Competition 2024</p>
+              </div>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 2 International LO Kreatif 2024 Competition</p>
+              </div>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 1 Mobile Application FIT Competition 2024</p>
+              </div>
+              <div class="mt-1 text-sm text-blue-700">
+                <p>Juara 1 Metrodata National Competition</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="mt-6 pt-4 border-t border-gray-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+            <i class="fas fa-envelope text-blue-600 mr-2"></i>Kontak
+          </h3>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <div class="flex items-center">
+              <i class="fas fa-phone-alt text-gray-500 mr-2"></i>
+              <span>0811 2500 228</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-gray-500 mr-2"></i>
+              <span>infocsb@ciputra.ac.id</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fab fa-globe text-gray-500 mr-2"></i>
+              <a href="#" class="text-blue-600 hover:underline">https://www.ciputramakassar.ac.id/</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript External -->
+  <script src="script.js"></script>
+</body>
+</html>
